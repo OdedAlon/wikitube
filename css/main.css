@@ -1,0 +1,13 @@
+@font-face {
+    font-family: opensans;
+    src: url(../font/OpenSansHebrew-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+}

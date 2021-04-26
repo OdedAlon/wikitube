@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Wikitube</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>Wikitube</h1>
+        <input type="text" name="search" class="input-search"/>
+    </header>
+    <main>
+        <div class="video-player-container"></div>
+        
+        <div class="viki-container"></div>
+
+        <div class="videos-list"></div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="lib/axios.js"></script>
+    <script src="js/wikitube-service.js"></script>
+    <script src="js/wikitube-controller.js"></script>
+</body>
+
+</html>
