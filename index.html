@@ -13,11 +13,14 @@
 <body onload="onInit()">
     <header>
         <h1>Wikitube</h1>
-        <input type="text" name="search" class="input-search"/>
+        <input type="text" name="search" class="input-search" />
     </header>
     <main>
-        <div class="video-player-container"></div>
-        
+        <div class="video-player-container">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </div>
+
         <div class="viki-container"></div>
 
         <div class="videos-list"></div>
@@ -26,7 +29,7 @@
     <footer>
 
     </footer>
-
+    
     <script src="lib/axios.js"></script>
     <script src="js/wikitube-service.js"></script>
     <script src="js/wikitube-controller.js"></script>

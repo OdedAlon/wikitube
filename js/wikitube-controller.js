@@ -1,5 +1,10 @@
 'use strict';
 
 function onInit() {
-    console.log('Wow')
+    renderPlayer();
+}
+
+function renderPlayer() {
+    getVideo('tora')
+        .then(res => console.log(res))
 }
