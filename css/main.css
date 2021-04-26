@@ -3,11 +3,221 @@
     src: url(../font/OpenSansHebrew-Bold.ttf);
 }
 
+@font-face {
+    font-family: alfa;
+    src: url(../font/AlfaSlabOne-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    font-family: opensans;
     margin: 0;
-    background-color: lightblue;
+    background-color: rgb(221, 132, 74);
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.logo {
+    font-family: alfa;
+}
+
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px
+}
+
+.input-search {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.btn-search {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 330px 230px 700px;
+    gap: 10px 10px;
+    grid-template-areas:
+    "video"
+    "wiki"
+    "list";
+    align-items: normal;
+    justify-items: center;
+}
+
+.video-card {
+    grid-area: list;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    background-color: rgb(65, 17, 17);
+    color: rgb(221, 132, 74);
+    border-radius: 4px;
+}
+
+.video-card > * {
+    padding: 10px;
+}
+
+.video-card:first-child {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.video-player-container {
+    grid-area: video;
+    align-self: baseline;
+}
+
+iframe {
+    width: 360px;
+    height: 270px;
+}
+
+.wiki-container {
+    grid-area: wiki;
+    align-self: baseline;
+    width: 360px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100px;
+    width: 100vw;
+    bottom: 0;
+}
+
+@media (min-width: 630px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 25vw 65vw;
+        grid-template-rows: 50vh 30vh 20vh;
+        gap: 10px 10px;
+        align-items: normal;
+        justify-items: center;
+    }
+    
+    .video-card {
+        display: flex;
+        flex-direction: column;
+        grid-row: 3 / 4;
+        margin: 10px 10px;
+        background-color: rgb(65, 17, 17);
+        color: rgb(221, 132, 74);
+        border-radius: 4px;
+    }
+
+    .video-player-container {
+        grid-column: 2;
+        align-self: baseline;
+    }
+
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .wiki-container {
+        grid-column: 2;
+        align-self: baseline;
+        width: 400px;
+    }
+}
+
+@media (min-width: 870px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 35vw;
+        grid-template-rows: 50vh 30vh;
+        gap: 10px 10px;
+        align-items: normal;
+    }
+
+    .video-card {
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        margin: 10px 10px;
+        background-color: rgb(65, 17, 17);
+        color: rgb(221, 132, 74);
+        border-radius: 4px;
+    }
+
+    iframe {
+        width: 500px;
+        height: 375px;
+    }
+
+    .wiki-container {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-card {
+        margin: 30px 20px;
+    }
+
+    .video-card:first-child {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
+
+    .wiki-container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 40vw 50vw;
+        grid-template-rows: 50vh 30vh;
+        gap: 30px 30px;
+        align-items: normal;
+    }
+    
+    .video-card {
+        margin: 50px 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    iframe {
+        width: 700px;
+        height: 525px;
+}
+
+.wiki-container {
+    width: 700px;
 }
