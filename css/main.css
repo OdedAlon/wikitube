@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: alfa;
-    src: url(../font/AlfaSlabOne-Regular.ttf);
+    font-family: karantina;
+    src: url(../font/Karantina-Bold.ttf);
 }
 
 * {
@@ -33,7 +33,8 @@ header {
 }
 
 .logo {
-    font-family: alfa;
+    font-family: karantina;
+    font-size: 2rem;
 }
 
 .search {
@@ -105,10 +106,11 @@ iframe {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 100px;
+    background-color: rgb(226, 171, 69);
+    height: 40px;
     width: 100vw;
     bottom: 0;
+    position: fixed;
 }
 
 @media (min-width: 630px) {
