@@ -78,6 +78,7 @@ main {
     background-color: rgb(65, 17, 17);
     color: rgb(221, 132, 74);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .video-card > * {
